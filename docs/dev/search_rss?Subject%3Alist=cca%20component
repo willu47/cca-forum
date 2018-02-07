@@ -11,9 +11,9 @@
 
 
 
-<channel rdf:about="https://www.cca-forum.org/dev/search_rss">
+<channel rdf:about="https://cca-forum.github.io/dev/search_rss">
   <title>CCA Forum</title>
-  <link>https://www.cca-forum.org/dev</link>
+  <link>https://cca-forum.github.io/dev</link>
   
   <description>
     
@@ -24,27 +24,27 @@
   
   
   
-  <image rdf:resource="https://www.cca-forum.org/dev/logo.jpg"/>
+  <image rdf:resource="https://cca-forum.github.io/dev/logo.jpg"/>
 
   <items>
     <rdf:Seq>
         
-            <rdf:li rdf:resource="https://www.cca-forum.org/dev/software/components/c1"/>
+            <rdf:li rdf:resource="https://cca-forum.github.io/dev/software/components/c1"/>
         
         
-            <rdf:li rdf:resource="https://www.cca-forum.org/dev/software/components/c2"/>
+            <rdf:li rdf:resource="https://cca-forum.github.io/dev/software/components/c2"/>
         
         
-            <rdf:li rdf:resource="https://www.cca-forum.org/dev/software/components/petsc"/>
+            <rdf:li rdf:resource="https://cca-forum.github.io/dev/software/components/petsc"/>
         
     </rdf:Seq>
   </items>
 
 </channel>
 
-    <item rdf:about="https://www.cca-forum.org/dev/software/components/c1">        <title>Parallel Cartesian Grid</title>        <link>https://www.cca-forum.org/dev/software/components/c1</link>        <description>A Parallel Rectilinear Grid Component</description>        <dc:publisher>No publisher</dc:publisher>        <dc:creator>bek</dc:creator>        <dc:rights></dc:rights>                    <dc:subject>cca component</dc:subject>                <dc:date>2009-01-14T22:51:36Z</dc:date>        <dc:type>Page</dc:type>    </item>
-    <item rdf:about="https://www.cca-forum.org/dev/software/components/c2">        <title>SPARSKIT Suite</title>        <link>https://www.cca-forum.org/dev/software/components/c2</link>        <description>SPARSKIT suite of components from SPARSKIT2.</description>        <dc:publisher>No publisher</dc:publisher>        <dc:creator>bek</dc:creator>        <dc:rights></dc:rights>                    <dc:subject>cca component</dc:subject>                <dc:date>2009-01-14T22:51:36Z</dc:date>        <dc:type>Page</dc:type>    </item>
-    <item rdf:about="https://www.cca-forum.org/dev/software/components/petsc">        <title>TOPS/PETSc</title>        <link>https://www.cca-forum.org/dev/software/components/petsc</link>        <description> TOPS Interfaces and Implementation Based on PETSc</description>        <dc:publisher>No publisher</dc:publisher>        <dc:creator>rob_armstrong</dc:creator>        <dc:rights></dc:rights>                    <dc:subject>cca component</dc:subject>                <dc:date>2009-01-21T19:00:10Z</dc:date>        <dc:type>Page</dc:type>    </item>
+    <item rdf:about="https://cca-forum.github.io/dev/software/components/c1">        <title>Parallel Cartesian Grid</title>        <link>https://cca-forum.github.io/dev/software/components/c1</link>        <description>A Parallel Rectilinear Grid Component</description>        <dc:publisher>No publisher</dc:publisher>        <dc:creator>bek</dc:creator>        <dc:rights></dc:rights>                    <dc:subject>cca component</dc:subject>                <dc:date>2009-01-14T22:51:36Z</dc:date>        <dc:type>Page</dc:type>    </item>
+    <item rdf:about="https://cca-forum.github.io/dev/software/components/c2">        <title>SPARSKIT Suite</title>        <link>https://cca-forum.github.io/dev/software/components/c2</link>        <description>SPARSKIT suite of components from SPARSKIT2.</description>        <dc:publisher>No publisher</dc:publisher>        <dc:creator>bek</dc:creator>        <dc:rights></dc:rights>                    <dc:subject>cca component</dc:subject>                <dc:date>2009-01-14T22:51:36Z</dc:date>        <dc:type>Page</dc:type>    </item>
+    <item rdf:about="https://cca-forum.github.io/dev/software/components/petsc">        <title>TOPS/PETSc</title>        <link>https://cca-forum.github.io/dev/software/components/petsc</link>        <description> TOPS Interfaces and Implementation Based on PETSc</description>        <dc:publisher>No publisher</dc:publisher>        <dc:creator>rob_armstrong</dc:creator>        <dc:rights></dc:rights>                    <dc:subject>cca component</dc:subject>                <dc:date>2009-01-21T19:00:10Z</dc:date>        <dc:type>Page</dc:type>    </item>
 
 
 

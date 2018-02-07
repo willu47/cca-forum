@@ -10,7 +10,7 @@ var __dEcOdE=function(a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+(
  */
 
 /* - event-registration.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/event-registration.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/event-registration.js?original=1
 window.onDOMLoadEvents=new Array();window.DOMContentLoadedInitDone=false;
 function addDOMLoadEvent(listener){window.onDOMLoadEvents[window.onDOMLoadEvents.length]=listener}
 function DOMContentLoadedInit(){if(window.DOMContentLoadedInitDone) return;window.DOMContentLoadedInitDone=true;var exceptions=new Array();for(var i=0;i<window.onDOMLoadEvents.length;i++){var func=window.onDOMLoadEvents[i];try{func()} catch(e){exceptions[exceptions.length]=e}}
@@ -24,7 +24,7 @@ setTimeout("DOMContentLoadedScheduler()",250);if(window.addEventListener){window
 
 
 /* - register_function.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/register_function.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/register_function.js?original=1
 var bugRiddenCrashPronePieceOfJunk=(navigator.userAgent.indexOf('MSIE 5')!=-1&&navigator.userAgent.indexOf('Mac')!=-1)
 var W3CDOM=(!bugRiddenCrashPronePieceOfJunk&&typeof document.getElementsByTagName!='undefined'&&typeof document.createElement!='undefined');var registerEventListener=undefined;if(typeof addEvent!='undefined'){registerEventListener=function(elem,event,func){addEvent(elem,event,func);return true}} else if(window.addEventListener){registerEventListener=function(elem,event,func){elem.addEventListener(event,func,false);return true}} else if(window.attachEvent){registerEventListener=function(elem,event,func){var result=elem.attachEvent("on"+event,func);return result}} else{registerEventListener=function(elem,event,func){return false}}
 var unRegisterEventListener=undefined;if(typeof removeEvent!='undefined'){unRegisterEventListener=function(elem,event,func){removeEvent(element,event,func);return true}} else if(window.removeEventListener){unRegisterEventListener=function(elem,event,func){elem.removeEventListener(event,func,false);return true}} else if(window.detachEvent){unRegisterEventListener=function(elem,event,func){var result=elem.detachEvent("on"+event,func);return result}} else{unRegisterEventListener=function(elem,event,func){return false}}
@@ -34,11 +34,11 @@ return node}}
 
 
 /* - cssQuery.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/cssQuery.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/cssQuery.js?original=1
 eval(__dEcOdE('9 o=5(){9 1o="2.0.2";9 C=/\\s*,\\s*/;9 o=5(s,1b){try{9 m=[];9 u=1c.callee.1L&&!1b;9 b=(1b)?(1b.constructor==1W)?1b:[1b]:[Z];9 25=Q(s).1E(C),i;M(i=0;i<25.q;i++){s=29(25[i]);B(13&&s.1e(0,3).22("")==" *#"){s=s.1e(2);1b=2d([],b,s[1])}1D 1b=b;9 j=0,t,f,a,c="";T(j<s.q){t=s[j++];f=s[j++];c+=t+f;a="";B(s[j]=="("){T(s[j++]!=")"&&j<s.q){a+=s[j]}a=a.1e(0,-1);c+="("+a+")"}B(t==" "&&f=="*"&&s[j]=="#")1l;1b=(u&&19[c])?19[c]:1M(1b,t,f,a);B(u)19[c]=1b}m=m.concat(1b)}1Q o.1U;6 m}catch(e){o.1U=e;6 []}};o.1A=5(){6 "5 o() {\\n  [1o "+1o+"]\\n}"};9 19={};o.1L=Y;o.clearCache=5(s){B(s){s=29(s).22("");1Q 19[s]}1D 19={}};9 1J={};9 1u=Y;o.14=5(n,s){B(1u)1P("$script="+1S(s));1J[n]=1F s()};o.valueOf=5(c){6 c?1P(c):F};9 y={};9 8={};9 7={X:/\\[([\\w-]+(\\|[\\w-]+)?)\\s*(\\W?=)?\\s*([^\\]]*)\\]/};9 l=[];y[" "]=5(r,f,t,n){9 e,i,j;M(i=0;i<f.q;i++){9 s=x(f[i],t,n);M(j=0;(e=s[j]);j++){B(z(e)&&H(e,n))r.K(e)}}};y["#"]=5(r,f,i){9 e,j;B(f.q==1&&f[0]==Z){9 n=Z.getElementById(i);B(n)r.K(n)}1D{M(j=0;(e=f[j]);j++)B(e.1j==i){r.K(e);1s}}};y["."]=5(r,f,c){c=1F 1y("(^|\\\\s)"+c+"(\\\\s|$)");9 e,i;M(i=0;(e=f[i]);i++)B(c.G(e.1x))r.K(e)};y[":"]=5(r,f,p,a){9 t=8[p],e,i;B(t)M(i=0;(e=f[i]);i++)B(t(e,a))r.K(e)};8["link"]=5(e){9 d=D(e);B(d.1G)M(9 i=0;i<d.1G.q;i++){B(d.1G[i]==e)6 15}};8["visited"]=5(e){};9 z=5(e){6(e&&e.1i==1&&e.1a!="!")?e:20};9 A=5(e){T(e&&(e=e.previousSibling)&&!z(e))1l;6 e};9 h=5(e){T(e&&(e=e.nextSibling)&&!z(e))1l;6 e};9 R=5(e){6 z(e.1q)||h(e.1q)};9 16=5(e){6 z(e.1v)||A(e.1v)};9 12=5(e){9 c=[];e=R(e);T(e){c.K(e);e=h(e)}6 c};9 13=15;9 1H=5(e){9 d=D(e);6(typeof d.1C=="unknown")?/\\.24$/i.G(d.URL):Boolean(d.1C=="XML Document")};9 D=5(e){6 e.ownerDocument||e.Z};9 x=5(e,t){6(t=="*"&&e.1Z)?e.1Z:e.x(t)};9 P=5(e,t,n){B(t=="*")6 z(e);B(!H(e,n))6 Y;B(!1H(e))6 e.1a.1m()==t.1m();6 e.1a==t};9 H=5(e,n){6!n||(n=="*")||(e.scopeName==n)};9 V=5(e){6 e.1w};5 2d(r,f,1j){9 m,i,j;M(i=0;i<f.q;i++){B(m=f[i].1Z.item(1j)){B(m.1j==1j)r.K(m);1D B(m.q!=20){M(j=0;j<m.q;j++){B(m[j].1j==1j)r.K(m[j])}}}}6 r};B(![].K)1W.prototype.K=5(){M(9 i=0;i<1c.q;i++){F[F.q]=1c[i]}6 F.q};9 N=/\\|/;5 1M(1b,t,f,a){B(N.G(f)){f=f.1E(N);a=f[0];f=f[1]}9 r=[];B(y[t]){y[t](r,1b,f,a)}6 r};9 S=/^[^\\s>+~]/;9 2e=/[\\s#.:>+~()@]|[^\\s#.:>+~()@]+/g;5 29(s){B(S.G(s))s=" "+s;6 s.X(2e)||[]};9 W=/\\s*([\\s>+~(),]|^|$)\\s*/g;9 I=/([\\s>+~,]|[^(]\\+|^)([#.:@])/g;9 Q=5(s){6 s.O(W,"$1").O(I,"$1*$2")};9 1I={1A:5(){6 "\'"},X:/^(\'[^\']*\')|("[^"]*")$/,G:5(s){6 F.X.G(s)},28:5(s){6 F.G(s)?s:F+s+F},1N:5(s){6 F.G(s)?s.1e(1,-1):s}};9 1p=5(t){6 1I.1N(t)};9 E=/([\\/()[\\]?{}|*+-])/g;5 J(s){6 s.O(E,"\\\\$1")};o.14("1Y-standard",5(){13=1P("Y;/*@cc_on@B(@\\x5fwin32)13=15@end@*/");B(!13){x=5(e,t,n){6 n?e.getElementsByTagNameNS("*",t):e.x(t)};H=5(e,n){6!n||(n=="*")||(e.prefix==n)};1H=Z.1n? 5(e){6/24/i.G(D(e).1n)}:5(e){6 D(e).18.1a!="HTML"};V=5(e){6 e.textContent||e.1w||2b(e)};5 2b(e){9 t="",n,i;M(i=0;(n=e.1r[i]);i++){1t(n.1i){10 11:10 1:t+=2b(n);1s;10 3:t+=n.nodeValue;1s}}6 t}}});o.14("1Y-level2",5(){y[">"]=5(r,f,t,n){9 e,i,j;M(i=0;i<f.q;i++){9 s=12(f[i]);M(j=0;(e=s[j]);j++)B(P(e,t,n))r.K(e)}};y["+"]=5(r,f,t,n){M(9 i=0;i<f.q;i++){9 e=h(f[i]);B(e&&P(e,t,n))r.K(e)}};y["@"]=5(r,f,a){9 t=l[a].G;9 e,i;M(i=0;(e=f[i]);i++)B(t(e))r.K(e)};8["first-1g"]=5(e){6!A(e)};8["1O"]=5(e,c){c=1F 1y("^"+c,"i");T(e&&!e.L("1O"))e=e.17;6 e&&c.G(e.L("1O"))};7.1V=/\\\\:/g;7.1z="@";7.U={};7.O=5(m,a,n,c,v){9 k=F.1z+m;B(!l[k]){a=F.1R(a,c||"",v||"");l[k]=a;l.K(a)}6 l[k].1j};7.1T=5(s){s=s.O(F.1V,"|");9 m;T(m=s.X(F.X)){9 r=F.O(m[0],m[1],m[2],m[3],m[4]);s=s.O(F.X,r)}6 s};7.1R=5(p,t,v){9 a={};a.1j=F.1z+l.q;a.name=p;t=F.U[t];t=t?t(F.L(p),1p(v)):Y;a.G=1F Function("e","6 "+t);6 a};7.L=5(n){1t(n.toLowerCase()){10 "1j":6 "e.1j";10 "class":6 "e.1x";10 "M":6 "e.htmlFor";10 "23":B(13){6 "1S((e.outerHTML.X(/23=\\\\1X?([^\\\\s\\\\1X]*)\\\\1X?/)||[])[1]||\'\')"}}6 "e.L(\'"+n.O(N,":")+"\')"};7.U[""]=5(a){6 a};7.U["="]=5(a,v){6 a+"=="+1I.28(v)};7.U["~="]=5(a,v){6 "/(^| )"+J(v)+"( |$)/.G("+a+")"};7.U["|="]=5(a,v){6 "/^"+J(v)+"(-|$)/.G("+a+")"};9 2c=Q;Q=5(s){6 2c(7.1T(s))}});o.14("1Y-level3",5(){y["~"]=5(r,f,t,n){9 e,i;M(i=0;(e=f[i]);i++){T(e=h(e)){B(P(e,t,n))r.K(e)}}};8["contains"]=5(e,t){t=1F 1y(J(1p(t)));6 t.G(V(e))};8["root"]=5(e){6 e==D(e).18};8["empty"]=5(e){9 n,i;M(i=0;(n=e.1r[i]);i++){B(z(n)||n.1i==3)6 Y}6 15};8["21-1g"]=5(e){6!h(e)};8["only-1g"]=5(e){e=e.17;6 R(e)==16(e)};8["not"]=5(e,s){9 n=o(s,D(e));M(9 i=0;i<n.q;i++){B(n[i]==e)6 Y}6 15};8["26-1g"]=5(e,a){6 1h(e,a,A)};8["26-21-1g"]=5(e,a){6 1h(e,a,h)};8["target"]=5(e){6 e.1j==location.hash.1e(1)};8["1K"]=5(e){6 e.1K};8["enabled"]=5(e){6 e.1k===Y};8["1k"]=5(e){6 e.1k};8["1d"]=5(e){6 e.1d};7.U["^="]=5(a,v){6 "/^"+J(v)+"/.G("+a+")"};7.U["$="]=5(a,v){6 "/"+J(v)+"$/.G("+a+")"};7.U["*="]=5(a,v){6 "/"+J(v)+"/.G("+a+")"};5 1h(e,a,t){1t(a){10 "n":6 15;10 "even":a="2n";1s;10 "odd":a="2n+1"}9 27=12(e.17);5 2a(i){9 i=(t==h)?27.q-i:i-1;6 27[i]==e};B(!1f(a))6 2a(a);a=a.1E("n");9 m=1B(a[0]);9 s=1B(a[1]);B((1f(m)||m==1)&&s==0)6 15;B(m==0&&!1f(s))6 2a(s);B(1f(s))s=0;9 c=1;T(e=t(e))c++;B(1f(m)||m==1)6(t==h)?(c<=s):(s>=c);6(c%m)==s}});1u=15;6 o}();',62,139,'',0,{}))
 
 /* - sarissa.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/sarissa.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/sarissa.js?original=1
 function Sarissa(){};Sarissa.VERSION="${project.version}";Sarissa.PARSED_OK="Document contains no parsing errors";Sarissa.PARSED_EMPTY="Document is empty";Sarissa.PARSED_UNKNOWN_ERROR="Not well-formed or other error";Sarissa.IS_ENABLED_TRANSFORM_NODE=false;var _sarissa_iNsCounter=0;var _SARISSA_IEPREFIX4XSLPARAM="";var _SARISSA_HAS_DOM_IMPLEMENTATION=document.implementation&&true;var _SARISSA_HAS_DOM_CREATE_DOCUMENT=_SARISSA_HAS_DOM_IMPLEMENTATION&&document.implementation.createDocument;var _SARISSA_HAS_DOM_FEATURE=_SARISSA_HAS_DOM_IMPLEMENTATION&&document.implementation.hasFeature;var _SARISSA_IS_MOZ=_SARISSA_HAS_DOM_CREATE_DOCUMENT&&_SARISSA_HAS_DOM_FEATURE;var _SARISSA_IS_SAFARI=navigator.userAgent.toLowerCase().indexOf("safari")!=-1||navigator.userAgent.toLowerCase().indexOf("konqueror")!=-1;var _SARISSA_IS_SAFARI_OLD=_SARISSA_IS_SAFARI&&parseInt((navigator.userAgent.match(/AppleWebKit\/(\d+)/)||{})[1])<420;var _SARISSA_IS_IE=document.all&&window.ActiveXObject&&navigator.userAgent.toLowerCase().indexOf("msie")>-1&&navigator.userAgent.toLowerCase().indexOf("opera")==-1;var _SARISSA_IS_OPERA=navigator.userAgent.toLowerCase().indexOf("opera")!=-1;if(!window.Node||!Node.ELEMENT_NODE){Node={ELEMENT_NODE:1,ATTRIBUTE_NODE:2,TEXT_NODE:3,CDATA_SECTION_NODE:4,ENTITY_REFERENCE_NODE:5,ENTITY_NODE:6,PROCESSING_INSTRUCTION_NODE:7,COMMENT_NODE:8,DOCUMENT_NODE:9,DOCUMENT_TYPE_NODE:10,DOCUMENT_FRAGMENT_NODE:11,NOTATION_NODE:12}};if(_SARISSA_IS_SAFARI_OLD){HTMLHtmlElement=document.createElement("html").constructor;Node=HTMLElement={};HTMLElement.prototype=HTMLHtmlElement.__proto__.__proto__;HTMLDocument=Document=document.constructor;var x=new DOMParser();XMLDocument=x.constructor;Element=x.parseFromString("<Single />","text/xml").documentElement.constructor;x=null}
 if(typeof XMLDocument=="undefined"&&typeof Document!="undefined"){XMLDocument=Document}
 if(_SARISSA_IS_IE){_SARISSA_IEPREFIX4XSLPARAM="xsl:";var _SARISSA_DOM_PROGID="";var _SARISSA_XMLHTTP_PROGID="";var _SARISSA_DOM_XMLWRITER="";Sarissa.pickRecentProgID=function(idList){var bFound=false,e;for(var i=0;i<idList.length&&!bFound;i++){try{var oDoc=new ActiveXObject(idList[i]);var o2Store=idList[i];bFound=true}catch(objException){e=objException}};if(!bFound){throw "Could not retrieve a valid progID of Class: "+idList[idList.length-1]+". (original exception: "+e+")"};idList=null;return o2Store};_SARISSA_DOM_PROGID=null;_SARISSA_THREADEDDOM_PROGID=null;_SARISSA_XSLTEMPLATE_PROGID=null;_SARISSA_XMLHTTP_PROGID=null;if(!window.XMLHttpRequest){XMLHttpRequest=function(){if(!_SARISSA_XMLHTTP_PROGID){_SARISSA_XMLHTTP_PROGID=Sarissa.pickRecentProgID(["Msxml2.XMLHTTP.6.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"])};return new ActiveXObject(_SARISSA_XMLHTTP_PROGID)}};Sarissa.getDomDocument=function(sUri,sName){if(!_SARISSA_DOM_PROGID){_SARISSA_DOM_PROGID=Sarissa.pickRecentProgID(["Msxml2.DOMDocument.6.0","Msxml2.DOMDocument.3.0","MSXML2.DOMDocument","MSXML.DOMDocument","Microsoft.XMLDOM"])};var oDoc=new ActiveXObject(_SARISSA_DOM_PROGID);if(sName){var prefix="";if(sUri){if(sName.indexOf(":")>1){prefix=sName.substring(0,sName.indexOf(":"));sName=sName.substring(sName.indexOf(":")+1)}else{prefix="a"+(_sarissa_iNsCounter++)}};if(sUri){oDoc.loadXML('<'+prefix+':'+sName+" xmlns:"+prefix+"=\""+sUri+"\""+" />")} else{oDoc.loadXML('<'+sName+" />")}};return oDoc};Sarissa.getParseErrorText=function(oDoc){var parseErrorText=Sarissa.PARSED_OK;if(oDoc&&oDoc.parseError&&oDoc.parseError.errorCode&&oDoc.parseError.errorCode!=0){parseErrorText="XML Parsing Error: "+oDoc.parseError.reason+"\nLocation: "+oDoc.parseError.url+"\nLine Number "+oDoc.parseError.line+", Column "+oDoc.parseError.linepos+":\n"+oDoc.parseError.srcText+"\n";for(var i=0;i<oDoc.parseError.linepos;i++){parseErrorText+="-"};parseErrorText+="^\n"}
@@ -57,11 +57,11 @@ else{tmp=document.createElement("div")};if(bChildren){tmp.innerHTML=oNode.xml?oN
 if((!nodeFrom)||(!nodeTo)){throw "Both source and destination nodes must be provided"};if(!bPreserveExisting){Sarissa.clearChildNodes(nodeTo)};var ownerDoc=nodeTo.nodeType==Node.DOCUMENT_NODE?nodeTo:nodeTo.ownerDocument;var nodes=nodeFrom.childNodes;if(typeof(ownerDoc.importNode)!="undefined"){for(var i=0;i<nodes.length;i++){nodeTo.appendChild(ownerDoc.importNode(nodes[i],true))}} else{for(var i=0;i<nodes.length;i++){nodeTo.appendChild(nodes[i].cloneNode(true))}}};Sarissa.moveChildNodes=function(nodeFrom,nodeTo,bPreserveExisting){if((!nodeFrom)||(!nodeTo)){throw "Both source and destination nodes must be provided"};if(!bPreserveExisting){Sarissa.clearChildNodes(nodeTo)};var nodes=nodeFrom.childNodes;if(nodeFrom.ownerDocument==nodeTo.ownerDocument){while(nodeFrom.firstChild){nodeTo.appendChild(nodeFrom.firstChild)}} else{var ownerDoc=nodeTo.nodeType==Node.DOCUMENT_NODE?nodeTo:nodeTo.ownerDocument;if(typeof(ownerDoc.importNode)!="undefined"){for(var i=0;i<nodes.length;i++){nodeTo.appendChild(ownerDoc.importNode(nodes[i],true))}}else{for(var i=0;i<nodes.length;i++){nodeTo.appendChild(nodes[i].cloneNode(true))}};Sarissa.clearChildNodes(nodeFrom)}};Sarissa.xmlize=function(anyObject,objectName,indentSpace){indentSpace=indentSpace?indentSpace:'';var s=indentSpace+'<'+objectName+'>';var isLeaf=false;if(!(anyObject instanceof Object)||anyObject instanceof Number||anyObject instanceof String||anyObject instanceof Boolean||anyObject instanceof Date){s+=Sarissa.escape(""+anyObject);isLeaf=true}else{s+="\n";var isArrayItem=anyObject instanceof Array;for(var name in anyObject){s+=Sarissa.xmlize(anyObject[name],(isArrayItem?"array-item key=\""+name+"\"":name),indentSpace+"   ")};s+=indentSpace};return(s+=(objectName.indexOf(' ')!=-1?"</array-item>\n":"</"+objectName+">\n"))};Sarissa.escape=function(sXml){return sXml.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g, "&quot;").replace(/'/g,"&apos;")};Sarissa.unescape=function(sXml){return sXml.replace(/&apos;/g,"'").replace(/&quot;/g,"\"").replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/&amp;/g,"&")};
 
 /* - plone_javascript_variables.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/plone_javascript_variables.js?original=1
-var portal_url='https://www.cca-forum.org/dev';var form_modified_message='Your form has not been saved. All changes you have made will be lost.';var form_resubmit_message='You already clicked the submit button. Do you really want to submit this form again?';var external_links_open_new_window='false';
+// https://cca-forum.github.io/dev/portal_javascripts/plone_javascript_variables.js?original=1
+var portal_url='https://cca-forum.github.io/dev';var form_modified_message='Your form has not been saved. All changes you have made will be lost.';var form_resubmit_message='You already clicked the submit button. Do you really want to submit this form again?';var external_links_open_new_window='false';
 
 /* - nodeutilities.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/nodeutilities.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/nodeutilities.js?original=1
 function wrapNode(node,wrappertype,wrapperclass){var wrapper=document.createElement(wrappertype)
 wrapper.className=wrapperclass;var innerNode=node.parentNode.replaceChild(wrapper,node);wrapper.appendChild(innerNode)};
 function nodeContained(innernode,outernode){var node=innernode.parentNode;while(node!=document){if(node==outernode){return true}
@@ -88,7 +88,7 @@ function copyChildNodes(srcNode,dstNode){var nodes=srcNode.childNodes;for(var i=
 
 
 /* - cookie_functions.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/cookie_functions.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/cookie_functions.js?original=1
 function createCookie(name,value,days){if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires="; expires="+date.toGMTString()} else{expires=""}
 document.cookie=name+"="+escape(value)+expires+"; path=/;"};
 function readCookie(name){var nameEQ=name+"=";var ca=document.cookie.split(';');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' '){c=c.substring(1,c.length)}
@@ -96,7 +96,7 @@ if(c.indexOf(nameEQ)==0){return unescape(c.substring(nameEQ.length,c.length))}}
 return null};
 
 /* - livesearch.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/livesearch.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/livesearch.js?original=1
 var livesearch=function(){var _search_delay=400;var _hide_delay=400;var _search_handlers={};var _LSHighlight="LSHighlight";var _cssQuery=cssQuery;var _registerEventListener=registerEventListener;var _removeClassName=removeClassName;var _addClassName=addClassName;
 function _isform($node){if($node.tagName&&($node.tagName=='FORM'||$node.tagName=='form')){return true}
 return false};
@@ -142,7 +142,7 @@ function _init(){if(!W3CDOM)
 return;var $gadgets=_cssQuery("#searchGadget, input.portlet-search-gadget");for(var i=0;i<$gadgets.length;i++){_setup($gadgets[i],i)}};registerPloneFunction(_init);return{search: function(id){_search_handlers[id].search()},hide: function(id){_search_handlers[id].hide()}}}();
 
 /* - select_all.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/select_all.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/select_all.js?original=1
 function selectAll(id,formName){if(formName==null){checkboxes=document.getElementsByName(id)
 for(i=0;i<checkboxes.length;i++){checkboxes[i].checked=true }} else{for(i=0;i<document.forms[formName].elements.length;i++){if(document.forms[formName].elements[i].name==id){document.forms[formName].elements[i].checked=true}}}}
 function deselectAll(id,formName){if(formName==null){checkboxes=document.getElementsByName(id)
@@ -153,7 +153,7 @@ if(selectbutton.isSelected==false){selectbutton.setAttribute('src',portal_url+'/
 
 
 /* - dragdropreorder.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/dragdropreorder.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/dragdropreorder.js?original=1
 var ploneDnDReorder={}
 ploneDnDReorder.dragging=null;ploneDnDReorder.table=null;ploneDnDReorder.rows=null;ploneDnDReorder.isDraggable=function(node){return hasClassName(node,'draggable')};ploneDnDReorder.doDown=function(e){if(!e) var e=window.event;var target=findContainer(this,ploneDnDReorder.isDraggable);if(target==null)
 return;for(var i=0;i<ploneDnDReorder.rows.length;i++)
@@ -181,7 +181,7 @@ return;var req=new XMLHttpRequest();req.open("POST","folder_moveitem",true);req.
 
 
 /* - collapsiblesections.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/collapsiblesections.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/collapsiblesections.js?original=1
 function isCollapsible(node){if(hasClassName(node,'collapsible')){return true}
 return false};
 function toggleCollapsible(event){if(!event) var event=window.event;if(!this.tagName&&(this.tagName=='DT'||this.tagName=='dt')){return true}
@@ -191,7 +191,7 @@ function activateCollapsibles(){if(!W3CDOM){return false}
 var collapsibles=cssQuery('dl.collapsible');for(var i=0;i<collapsibles.length;i++){var collapsible=collapsibles[i];var collapsible_header=cssQuery('dt.collapsibleHeader',collapsible)[0];collapsible_header.onclick=toggleCollapsible;if(hasClassName(collapsible,'inline')){if(hasClassName(collapsible,'collapsedOnLoad')){replaceClassName(collapsible,'collapsedOnLoad','collapsedInlineCollapsible')} else{addClassName(collapsible,'expandedInlineCollapsible')}} else{if(hasClassName(collapsible,'collapsedOnLoad')){replaceClassName(collapsible,'collapsedOnLoad','collapsedBlockCollapsible')} else{addClassName(collapsible,'expandedBlockCollapsible')}}}};registerPloneFunction(activateCollapsibles);
 
 /* - form_tabbing.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/form_tabbing.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/form_tabbing.js?original=1
 var ploneFormTabbing={};ploneFormTabbing.isFormPanel=function(node){if(hasClassName(node,'formPanel')){return true}
 return false};ploneFormTabbing._toggleFactory=function(container,tab_ids,panel_ids){return function(e){if(!e) var e=window.event;if(this.tagName.toLowerCase()=='select'){var orig_id=this.value} else{var orig_id=this.id}
 var id=orig_id.replace(/^fieldsetlegend-/,"fieldset-")
@@ -227,7 +227,7 @@ div.formControls input[name=form_next]");for(var i=0;i<buttons.length;i++){butto
 var dls=cssQuery("dl.enableFormTabbing");for(var i=0;i<dls.length;i++){ploneFormTabbing.initializeDL(dls[i])}};registerPloneFunction(ploneFormTabbing.initialize);
 
 /* - input-label.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/input-label.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/input-label.js?original=1
 var ploneInputLabel={focus: function(){return function(e){var target;if(!e) var e=window.event;if(e.target) target=e.target;else if(e.srcElement) target=e.srcElement;if(target.nodeType==3)
 target=target.parentNode;if(hasClassName(target,"inputLabelActive")&&(target.value==target.title)){target.value='';removeClassName(target,"inputLabelActive")}}},blur: function(){return function(e){var target;if(!e) var e=window.event;if(e.target) target=e.target;else if(e.srcElement) target=e.srcElement;if(target.nodeType==3)
 target=target.parentNode;if(target.value==''){addClassName(target,"inputLabelActive");target.value=target.title}}},isForm: function(node){return(node.tagName&&node.tagName.toLowerCase()=='form')},submit: function(){return function(e){var target;if(!e) var e=window.event;if(e.target) target=e.target;else if(e.srcElement) target=e.srcElement;if(target.nodeType==3)
@@ -238,7 +238,7 @@ registerEventListener(element,'focus',ploneInputLabel.focus());registerEventList
 form.inputLabelData=new Object();form.inputLabelData.oldsubmit=form.onsubmit;form.onsubmit=ploneInputLabel.submit()}}}};registerPloneFunction(ploneInputLabel.init);
 
 /* - highlightsearchterms.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/highlightsearchterms.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/highlightsearchterms.js?original=1
 function highlightTermInNode(node,word){var contents=node.nodeValue;var index=contents.toLowerCase().indexOf(word.toLowerCase());if(index<0){return false};var parent=node.parentNode;if(parent.className!="highlightedSearchTerm"){var hiword=document.createElement("span");hiword.className="highlightedSearchTerm";hiword.appendChild(document.createTextNode(contents.substr(index,word.length)));parent.insertBefore(document.createTextNode(contents.substr(0,index)),node);parent.insertBefore(hiword,node);parent.insertBefore(document.createTextNode(contents.substr(index+word.length)),node);parent.removeChild(node)}}
 function highlightSearchTerms(terms,startnode){if(!W3CDOM){return false};if(!terms){return false};if(!startnode){return false};for(var term_index=0;term_index<terms.length;term_index++){var term=terms[term_index];if(term.length<1)
 continue;var term_lower=term.toLowerCase();if(term_lower!='not'&&term_lower!='and'&&term_lower!='or'){walkTextNodes(startnode,highlightTermInNode,term)}}}
@@ -251,7 +251,7 @@ function highlightSearchTermsFromURI(){if(!W3CDOM){return false};var terms=getSe
 registerPloneFunction(highlightSearchTermsFromURI);
 
 /* - se-highlight.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/se-highlight.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/se-highlight.js?original=1
 var searchEngines=[['^http://([^.]+\\.)?google.*','q='],['^http://search\\.yahoo.*','p='],['^http://search\\.msn.*','q='],['^http://search\\.aol.*','userQuery='],['^http://(www\\.)?altavista.*','q='],['^http://(www\\.)?feedster.*','q='],['^http://search\\.lycos.*','query='],['^http://(www\\.)?alltheweb.*','q='],['^http://(www\\.)?ask\\.com.*','q=']]
 function decodeReferrer(ref){if(null==ref&&document.referrer){ref=document.referrer}
 if(!ref) return null;var match=new RegExp('');var seQuery='';for(var i=0;i<searchEngines.length;i++){if(!match.compile){match=new RegExp(searchEngines[i][0],'i')} else{match.compile(searchEngines[i][0],'i')}
@@ -261,7 +261,7 @@ return null}
 
 
 /* - first_input_focus.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/first_input_focus.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/first_input_focus.js?original=1
 function setFocus(){if(!W3CDOM){return false};var $elements=cssQuery("form div.error input,"+"form div.error textarea,"+"form div.error select");if($elements.length>0){$elements[0].focus();return}
 $elements=cssQuery("form.enableAutoFocus input[type=text],"+"form.enableAutoFocus textarea");for(var i=0;i<$elements.length;i++){if($elements[i].type=='hidden'){continue}
 $elements[i].focus();break}}
@@ -269,19 +269,19 @@ if(typeof addDOMLoadEvent!="undefined"){addDOMLoadEvent(setFocus)}
 
 
 /* - accessibility.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/accessibility.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/accessibility.js?original=1
 function setBaseFontSize(fontsize,reset){var body=cssQuery('body')[0];if(reset==1){removeClassName(body,'smallText');removeClassName(body,'largeText');createCookie("fontsize",fontsize,365)}
 addClassName(body,fontsize)};
 function initBaseFontSize(){var fontsize=readCookie("fontsize");if(fontsize!=null){setBaseFontSize(fontsize,0)}};registerPloneFunction(initBaseFontSize);
 
 /* - styleswitcher.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/styleswitcher.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/styleswitcher.js?original=1
 function setActiveStyleSheet(title,reset){if(!W3CDOM){return false};var i,a,main;for(i=0;(a=document.getElementsByTagName("link")[i]);i++){if(a.getAttribute("rel").indexOf("style")!=-1&&a.getAttribute("title")){a.disabled=true;if(a.getAttribute("title")==title){a.disabled=false}}}
 if(reset==1){createCookie("wstyle",title,365)}};
 function setStyle(){var style=readCookie("wstyle");if(style!=null){setActiveStyleSheet(style,0)}};registerPloneFunction(setStyle);
 
 /* - toc.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/toc.js?original=1
+// https://cca-forum.github.io/dev/portal_javascripts/toc.js?original=1
 function walkHeaders(node,func,data){if(!node){return false}
 var valid=Array("h1","h2","h3","h4");if(node.hasChildNodes){var child=node.firstChild;while(child){walkHeaders(child,func,data);child=child.nextSibling}
 var type=node.tagName;if(type){type=type.toLowerCase();for(var k=0;k<valid.length;k++){if(valid[k]==type){func(node,data);break}}}}}
