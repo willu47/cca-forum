@@ -1,6 +1,6 @@
 
 /* - ploneglossary.js - */
-// https://www.cca-forum.org/dev/portal_javascripts/ploneglossary.js?original=1
+// https://cca-forum.github.io/cca-forum/dev/portal_javascripts/ploneglossary.js?original=1
 function goto_glossary_definition(definition_index){url=related_glossary_definitions[definition_index]["url"];document.location=url}
 function show_glossary_definition_popup(node,definition_index){popup_node=document.createElement("div");popup_node.setAttribute('id',"glossary-definition-popup");title_text=related_glossary_definitions[definition_index]["title"];title_node=document.createElement("h6");title_node.appendChild(document.createTextNode(title_text));popup_node.appendChild(title_node);description_text=related_glossary_definitions[definition_index]["description"];description_node=document.createElement("p");texts=description_text.split('\n')
 for(i=0;i<texts.length;i++){text=texts[i];description_node.appendChild(document.createTextNode(text));description_node.appendChild(document.createElement("br"))}

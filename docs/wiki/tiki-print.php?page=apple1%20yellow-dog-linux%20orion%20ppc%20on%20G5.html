@@ -78,7 +78,7 @@ Linux apple1 2.6.13.4 #1 SMP Thu Oct 20 21:48:41 MDT 2005 ppc64 ppc64 ppc64 GNU/
 It seems that there is no JDK available with this distro.  I ended up using j2sdk-1.3.1-02c-FCS-linux-ppc.bin from blackdown.org.  Blackdown does not have a JDK 1.4 version for ppc, and this caused babel issues later on.  Hacks on several scripts (javac, realpath) were required to get &quot;ppc64&quot; recognized (and avoid &quot;Can't find libjava.so&quot; errors):<br />
 <br />
 case &quot;`uname -m`&quot; in<br />
-<tt>    i<a class="wiki"  href="https://www.cca-forum.org/wiki/3-7">3-7</a>86 | ia32 | ia64)</tt><br />
+<tt>    i<a class="wiki"  href="https://cca-forum.github.io/cca-forum/wiki/3-7">3-7</a>86 | ia32 | ia64)</tt><br />
 <tt>        proc=i386</tt><br />
 <tt>        ;;</tt><br />
 <tt>    sparc*)</tt><br />

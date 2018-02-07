@@ -209,7 +209,7 @@ tiki_cookie_jar = {
 
 
 
-<div class="option"><a href="https://www.cca-forum.org/download/cca-tools" class="linkmenu">Download</a></div>
+<div class="option"><a href="https://cca-forum.github.io/cca-forum/download/cca-tools" class="linkmenu">Download</a></div>
 
 
 
@@ -703,7 +703,7 @@ Put instructions to configure automated testing of the nightly babel distributio
 </li><li> Try out your profile: <div class="simplebox"><code>/bin/bash ./gantlet_cron.sh myorg-linux-gcc-g77-gfortran-dbg.profile make_webcheck myemailaddr@myorg.net</code></div>. LLNL generates nightly tarballs Sunday through Thursday, so this step should work fine if you run it Monday through Friday unless the LLNL nightly tarball build failed. If you run after 7:30pm Pacific time, you will most likely test the tarball generated in the evening of today's nightly tarball. If you run before 7:30pm, you will most likely test last night's nightly tarball. If it's successful, you should get a long XML file. Also examine the output in the terminal window to see if your profile needs tweeking.
 </li><li> Try out your profile as a cronjob. Use <div class="simplebox"><code>crontab -e</code></div> to edit your crontab. Add a line like <div class="simplebox"><code>45 19 * * 0-4 (cd ${HOME}/babel_testing/babel/regression/cronjobs ; /bin/bash gantlet_cron.sh myorg-linux-gcc-g77-gfortran-dbg.profile make_webcheck myemailaddr@myorg.net) 2&gt;&amp;1</code></div>. If your cron supports it, you might also want to set the <code>MAILTO</code> environment variable which sets the email address where cron email is sent. In some environments, you may need to set http_proxy variables as well so the download of the nightly release succeeds.
 </li><li> Once you've had some successful test runs (successful doesn't necessarily mean that all the tests pass, it just means the tests didn't break due to a incorrect .profile file), change your crontab line to send the email to LLNL. <div class="simplebox"><code>45 19 * * 0-4 (cd ${HOME}/babel_testing/babel/regression/cronjobs ; /bin/bash gantlet_cron.sh myorg-linux-gcc-g77-gfortran-dbg.profile make_webcheck babel-automated@llnl.gov ) 2&gt;&amp;1</code></div>
-</li><li> If you're a member of the babel-dev email list at LLNL, your nightly build should be included in the daily summary that's archived in the  <a class="wiki"  href="https://www.cca-forum.org/pipermail/babel-dev/">babel-dev mailing list archive</a>.
+</li><li> If you're a member of the babel-dev email list at LLNL, your nightly build should be included in the daily summary that's archived in the  <a class="wiki"  href="https://cca-forum.github.io/cca-forum/pipermail/babel-dev/">babel-dev mailing list archive</a>.
 </li><li> It's probably worth adding your profile to Babel's svn respository. <div class="simplebox"><code>cd ${HOME}/babel_testing/babel/regression/cronjobs</code></div> <div class="simplebox"><code>svn add myorg-linux-gcc-g77-gfortran-dbg.profile</code></div> <div class="simplebox"><code>svn propset svn:mime-type text/plain myorg-linux-gcc-g77-gfortran-dbg.profile</code></div> <div class="simplebox"><code>svn propset svn:eol-style native myorg-linux-gcc-g77-gfortran-dbg.profile</code></div> <div class="simplebox"><code>svn commit -m &quot;Adding profile for Myorg&quot; myorg-linux-gcc-g77-gfortran-dbg.profile</code></div>
 </li><li> Consider subscribing to the babel-dev mailing list at llnl.gov. See the <a class="wiki"  href="http://www.llnl.gov/CASC/components/resources.html">instructions here.</a> If the moderator questions why you want to join, mention that you're running a nightly build.
 </li></ol>
@@ -792,7 +792,7 @@ Put instructions to configure automated testing of the nightly babel distributio
 <div class="box box-login_box">
 <div class="box-title">Login</div><div id="mod-login_box" style="display: block" class="box-data">
 
-         <form name="loginbox" action="https://www.cca-forum.org/wiki/tiki-login.php" method="post" > 
+         <form name="loginbox" action="https://cca-forum.github.io/cca-forum/wiki/tiki-login.php" method="post" > 
            <table border="0">
       <tr>
         <td>

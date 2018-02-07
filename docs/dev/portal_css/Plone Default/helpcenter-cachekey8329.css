@@ -1,7 +1,7 @@
 
 /* - helpcenter.css - */
 @media all {
-/* https://www.cca-forum.org/dev/portal_css/helpcenter.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/helpcenter.css?original=1 */
 /* */
 .link-expand {
 background: transparent url(../../arrowDown.gif.html) 4px 5px no-repeat;
@@ -137,7 +137,7 @@ margin-top: 0.5em;
 
 /* - helpcenter_print.css - */
 @media print {
-/* https://www.cca-forum.org/dev/portal_css/helpcenter_print.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/helpcenter_print.css?original=1 */
 /* */
 /* */
 .link-parent, .link-expand, .jumpBox, .listingBar,

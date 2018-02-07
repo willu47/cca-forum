@@ -1,7 +1,7 @@
 
 /* - base.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/base.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/base.css?original=1 */
 /* */
 /* */
 body {
@@ -146,7 +146,7 @@ text-decoration: line-through;
 
 /* - public.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/public.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/public.css?original=1 */
 /* */
 /* */
 /* */
@@ -1069,7 +1069,7 @@ padding: 1px 0px 1px 16px;
 background: transparent url(../../lock_icon.gif.html) 0px 1px no-repeat;
 padding: 1px 0px 1px 16px;
 }
-#content a[href ^="https://www.cca-forum.org/dev"] {
+#content a[href ^="https://cca-forum.github.io/cca-forum/dev"] {
 background: none;
 padding: 0;
 }
@@ -1238,7 +1238,7 @@ padding-bottom:0.5em;
 
 /* - columns.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/columns.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/columns.css?original=1 */
 /* */
 #portal-columns {
 width: 100% !important;
@@ -1280,7 +1280,7 @@ padding: 0;
 
 /* - authoring.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/authoring.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/authoring.css?original=1 */
 /* */
 /* */
 /* */
@@ -1728,7 +1728,7 @@ display: none;
 
 /* - portlets.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/portlets.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/portlets.css?original=1 */
 /* */
 /* */
 /* */
@@ -1904,7 +1904,7 @@ margin: 0 0 0.5em 0.5em;
 
 /* - controlpanel.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/controlpanel.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/controlpanel.css?original=1 */
 /* */
 .inlineDisplay {
 display:inline
@@ -1960,7 +1960,7 @@ padding-top:0.8em;
 
 /* - print.css - */
 @media print {
-/* https://www.cca-forum.org/dev/portal_css/print.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/print.css?original=1 */
 body {
 font-family: Baskerville, Georgia, Garamond, Times, serif;
 font-size: 11pt !important;
@@ -2037,7 +2037,7 @@ display: none;
 
 /* - deprecated.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/deprecated.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/deprecated.css?original=1 */
 /* */
 /* */
 /* */
@@ -2064,7 +2064,7 @@ background-position: 5px 50%;
 
 /* - navtree.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/navtree.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/navtree.css?original=1 */
 /* */
 /* */
 /* */
@@ -2137,7 +2137,7 @@ height: 1.6em;
 
 /* - invisibles.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/invisibles.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/invisibles.css?original=1 */
 /* */
 /* */
 /* */
@@ -2206,7 +2206,7 @@ display: none;
 
 /* - forms.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/forms.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/forms.css?original=1 */
 /* */
 /* */
 textarea {
@@ -2444,7 +2444,7 @@ z-index: 999;
 
 /* - ploneKss.css - */
 @media screen {
-/* https://www.cca-forum.org/dev/portal_css/ploneKss.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/ploneKss.css?original=1 */
 #kss-spinner {
 display:none;
 width: 20px;
@@ -2488,7 +2488,7 @@ font-size: 55% !important;
 
 /* - ploneCustom.css - */
 @media all {
-/* https://www.cca-forum.org/dev/portal_css/ploneCustom.css?original=1 */
+/* https://cca-forum.github.io/cca-forum/dev/portal_css/ploneCustom.css?original=1 */
 /* */
 /* */
 /* */
